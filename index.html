@@ -4,30 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warhead Entertainment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Warhead Entertainment</h1>
+        <div class="container header-content">
+            <h1>Warhead Entertainment</h1>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </div>
     </header>
-    <main>
-        <section id="about">
-            <h3>About Us</h3>
-            <p>Game development label working on the next yet-to-be-revealed anime RPG game.</p>
-            <p>See more about what we're working on in this post <a href="https://bsky.app/profile/taylor.warheadent.com/post/3ljocmh6qsc2t" target="_blank">here</a>.</p>
+    <main class="container">
+        <section id="hero">
+            <h2>Crafting the Next Great Adventure</h2>
+            <p class="subtitle">An independent game development label.</p>
         </section>
-        <section id="social">
+        <section id="about" class="card">
+            <h3>About Us</h3>
+            <p>We are currently working on our next yet-to-be-revealed anime RPG game.</p>
+            <p>See more about what we're working on in this post <a href="https://bsky.app/profile/taylor.warheadent.com/post/3ljocmh6qsc2t" target="_blank" class="link-button">here</a>.</p>
+        </section>
+        <section id="social" class="card">
             <h3>Follow Us on Bluesky</h3>
-            <ul>
-                <li><a href="https://bsky.app/profile/warheadent.com" target="_blank">@warheadent.com</a></li>
-                <li><a href="https://bsky.app/profile/taylor.warheadent.com" target="_blank">@taylor.warheadent.com</a></li>
-                <li><a href="https://bsky.app/profile/aidan.warheadent.com" target="_blank">@aidan.warheadent.com</a></li>
-            </ul>
+            <div class="social-links">
+                <a href="https://bsky.app/profile/warheadent.com" target="_blank" class="social-btn">@warheadent.com</a>
+                <a href="https://bsky.app/profile/taylor.warheadent.com" target="_blank" class="social-btn">@taylor.warheadent.com</a>
+                <a href="https://bsky.app/profile/aidan.warheadent.com" target="_blank" class="social-btn">@aidan.warheadent.com</a>
+            </div>
         </section>
     </main>
     <footer>
-        <button id="theme-toggle">🌙</button> <!-- Icon will be set by JS -->
-        <p>&copy; 2025 Warhead Entertainment</p>
+        <div class="container">
+            <p>&copy; 2025 Warhead Entertainment</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
